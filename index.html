@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product Store</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <!-- 1 -->
+    <div class="w-50 mx-auto py-5">
+        <h1 class="mb-4 text-center">Product Store</h1>
+        <div class="form-group">
+            <label for="ProductName" class="mb-2">ProductName</label>
+            <input class="form-control mb-2" type="text" id="ProductName" name="ProductName">
+        </div>
+        <div class="form-group">
+            <label for="ProductPrice" class="mb-2">ProductPrice</label>
+            <input class="form-control mb-2" type="number" id="ProductPrice" name="ProductPrice">
+        </div>
+        <div class="form-group">
+            <label for="ProductCategory" class="mb-2">ProductCategory</label>
+            <input class="form-control mb-2" type="text" id="ProductCategory" name="ProductCategory">
+        </div>
+        <div class="form-group">
+            <label for="ProductDescription" class="mb-2">ProductDescription</label>
+            <input class="form-control mb-1" type="text" id="ProductDescription" name="ProductDescription">
+        </div>
+        <button type="submit" id="mainBtn" onclick="AddProduct()" class=" btn btn-outline-info mt-2" >AddProduct</button>    </div>
+
+    <!-- 2 -->
+    <div class="w-50 mx-auto mb-4">
+        <div class="form-group">
+            <label for="Search" class="mb-2">Search</label>
+            <input class="form-control mb-2" type="search" id="Search" name="Search">
+        </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="w-50 mx-auto mb-5">
+        <div>
+            <table class="table">
+                <thead>
+                    <th>ID</th>
+                    <th>ProductName</th>
+                    <th>ProductPrice</th>
+                    <th>ProductCategory</th>
+                    <th>ProductDescription</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="TableBody">
+                    
+            </table>
+        </div>
+        
+    </div>
+
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/script.js" ></script>
+</body>
+</html>
